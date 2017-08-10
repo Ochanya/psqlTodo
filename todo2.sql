@@ -105,4 +105,8 @@ VALUES
 
 
 );
--- SELECT * FROM Todolisti WHERE completed_at IS NULL and priority = 3;
+SELECT * FROM Todolisti WHERE completed_at IS NULL and priority = 3;
+Select * FROM Todolist WHERE completed_at is NULL ORDER BY priority DESC;
+SELECT priority, count(completed_at IS NULL) AS incomplete FROM Todolist GROUP BY priority ORDER BY incomplete DESC;
+SELECT priority, count(created_at ) AS numberoftodo FROM Todolist  WHERE created_at > current_date - 30 GROUP BY priority ;
+SELECT * FROM Todolist ORDER BY priority ASC, created_at ASC LIMIT 1;
