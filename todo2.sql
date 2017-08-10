@@ -1,12 +1,4 @@
--- DROP TABLE IF EXISTS
--- CREATE TABLE Todolisti (
---   id SERIAL PRIMARY KEY,
---   title VARCHAR(255) NOT NULL,
---   details TEXT NULL ,
---   priority INTEGER NOT NULL DEFAULT '1',
---   created_at  DATE NOT NULL,
---   completed_at DATE  NULL
--- );
+
 INSERT INTO Todolist(
   title,
   details,
